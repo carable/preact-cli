@@ -48,7 +48,6 @@ export default env => {
 	let isProd = env && env.production;
 	let cwd = env.cwd = resolve(env.cwd || process.cwd());
 	let src = dir => resolve(env.cwd, env.src || 'src', dir);
-
 	// only use src/ if it exists:
 	if (!exists(src('.'))) {
 		env.src = '.';
@@ -170,7 +169,10 @@ export default env => {
 							},
 							{
 								loader: 'sass-loader',
-								options: { sourceMap: true }
+								options: { 
+									sourceMap: true, 
+									includePaths: [src('style')] 
+								}
 							}
 						]
 					},

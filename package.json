@@ -73,7 +73,9 @@
     "babel-cli": "^6.24.0",
     "babel-eslint": "^7.2.1",
     "eslint": "^3.19.0",
-    "eslint-plugin-react": "^7.0.1"
+    "eslint-plugin-react": "^7.0.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6"
   },
   "dependencies": {
     "@webpack-blocks/babel6": "^0.4.1",
